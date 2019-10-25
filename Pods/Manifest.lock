@@ -1,0 +1,76 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FDFullscreenPopGesture (1.1)
+  - FLAnimatedImage (1.0.12)
+  - IQKeyboardManager (6.5.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.2.0)
+  - Reachability (3.2)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - SDWebImage/GIF (4.4.7):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+
+DEPENDENCIES:
+  - AFNetworking
+  - FDFullscreenPopGesture
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - Reachability
+  - SDCycleScrollView
+  - SDWebImage
+  - SDWebImage/GIF
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FDFullscreenPopGesture
+    - FLAnimatedImage
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - Reachability
+    - SDCycleScrollView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  IQKeyboardManager: 17a44c12fc47b1a0d3cbb8a89378953ac5ad8b1f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+
+PODFILE CHECKSUM: d35e942efa2f8f1edd80be07f50cb0281d221637
+
+COCOAPODS: 1.8.4
