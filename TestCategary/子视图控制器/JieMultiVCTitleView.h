@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles;
 
+
+- (void)setTitleWithProgress:(CGFloat)progress sourceIndex:(NSInteger)sourceIndex targetIndex:(NSInteger)targetIndex;
+
 @end
 
 NS_ASSUME_NONNULL_END

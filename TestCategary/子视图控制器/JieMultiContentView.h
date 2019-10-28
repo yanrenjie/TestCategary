@@ -10,9 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class JieMultiContentView;
+
+@protocol JieMultiContentViewDelegate <NSObject>
+
+- (void)multiContentView:(JieMultiContentView *)contentView progress:(CGFloat)progress sourceIndex:(NSInteger)sourceIndex targetIndex:(NSInteger)targetIndex;
+
+@end
+
 @interface JieMultiContentView : UIView
 
+@property(nonatomic, weak)id<JieMultiContentViewDelegate> delegate;
+
 - (instancetype)initWithFrame:(CGRect)frame childVCs:(NSMutableArray<UIViewController *> *)childVCs parentVC:(UIViewController *)parentVC;
+
+- (void)setCurrentIndex:(NSInteger)currentIndex;
 
 @end
 

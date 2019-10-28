@@ -138,7 +138,36 @@
         self.scrollLine.jie_x = scrollLineX;
     }];
     
-    [self.delegate mulitTitleView:self selectedIndex:self.currentIndex];
+    if ([self.delegate respondsToSelector:@selector(mulitTitleView:selectedIndex:)]) {
+        [self.delegate mulitTitleView:self selectedIndex:self.currentIndex];
+    }
+}
+
+
+- (void)setTitleWithProgress:(CGFloat)progress sourceIndex:(NSInteger)sourceIndex targetIndex:(NSInteger)targetIndex {
+    // 获取原来的label已经目标label
+    UILabel *sourceLabel = self.titleLabels[sourceIndex];
+    UILabel *targetLabel = self.titleLabels[targetIndex];
+    
+    // 处理滑块逻辑
+    CGFloat moveTotalX = targetLabel.jie_x - sourceLabel.jie_x;
+    CGFloat moveX = moveTotalX * progress;
+    self.scrollLine.jie_x = sourceLabel.jie_x + moveX;
+    
+    // 颜色渐变
+    // 1、取出变化的范围， RGB的形式表示（85， 85， 85）----> (255, 128, 0)
+    NSInteger deltaR = 255 - 85;
+    NSInteger deltaG = 128 - 85;
+    NSInteger deltaB = 0 - 85;
+    
+    // 2、变化的sourceLabel
+    sourceLabel.textColor = RGBColor(255 - deltaR * progress, 128 - deltaG * progress, 0 - deltaB * progress);
+    
+    // 3、变化的targetLabel
+    targetLabel.textColor = RGBColor(85 + deltaR * progress, 85 + deltaG * progress, 85 + deltaB * progress);
+    
+    // 记录最新的index
+    self.currentIndex = targetIndex;
 }
 
 @end

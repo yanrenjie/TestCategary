@@ -84,5 +84,74 @@ static NSString *viewControllerCellID = @"ViewControllerCellID";
 }
 
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    self.isForbidScrollDelegate = NO;
+    self.startOffsetX = scrollView.contentOffset.x;
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    // 判断是否是点击事件
+    if (self.isForbidScrollDelegate) {
+        return;
+    }
+    
+    // 定义需要获取的数据
+    CGFloat progress = 0;
+    NSInteger sourceIndex = 0;
+    NSInteger targetIndex = 0;
+    
+    // 判断是左滑还是右滑
+    CGFloat currentOffsetX = scrollView.contentOffset.x;
+    CGFloat scrollViewW = scrollView.jie_width;
+    
+    // 左滑动
+    if (currentOffsetX > self.startOffsetX) {
+        // 计算progress
+        progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW);
+        
+        // 计算sourceIndex
+        sourceIndex = (NSInteger)(currentOffsetX / scrollViewW);
+        
+        // 计算targetIndex
+        targetIndex = sourceIndex + 1;
+        if (targetIndex >= self.childVCs.count) {
+            targetIndex = self.childVCs.count - 1;
+        }
+        
+        // 如果完全滑过去
+        if (currentOffsetX - self.startOffsetX == scrollViewW) {
+            progress = 1;
+            targetIndex = sourceIndex;
+        }
+    } else { // 右滑动
+        // 计算progress
+        progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW));
+        
+        // 计算targetIndex
+        targetIndex = (NSInteger)(currentOffsetX / scrollViewW);
+        
+        // 计算sourceIndex
+        sourceIndex = targetIndex + 1;
+        if (sourceIndex >= self.childVCs.count) {
+            sourceIndex = self.childVCs.count - 1;
+        }
+        
+        // 将progress， sourceIndex，targetIndex和titleView进行联动绑定
+        if ([self.delegate respondsToSelector:@selector(multiContentView:progress:sourceIndex:targetIndex:)]) {
+            [self.delegate multiContentView:self progress:progress sourceIndex:sourceIndex targetIndex:targetIndex];
+        }
+    }
+}
+
+
+- (void)setCurrentIndex:(NSInteger)currentIndex {
+    // 记录需要进制执行代理方法
+    self.isForbidScrollDelegate = YES;
+    
+    // 滚动正确的位置
+    CGFloat offsetX = currentIndex * self.vcCollectionView.jie_width;
+    [self.vcCollectionView setContentOffset:CGPointMake(offsetX, 0) animated:NO];
+}
 
 @end
