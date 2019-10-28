@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "JieTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -21,10 +21,11 @@
     if (@available(iOS 13, *)) {
         return YES;
     }
+    
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyWindow];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[JieTabBarController new]];
     return YES;
 }
 

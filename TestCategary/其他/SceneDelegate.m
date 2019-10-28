@@ -1,5 +1,5 @@
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "JieTabBarController.h"
 
 @interface SceneDelegate ()
 
@@ -18,7 +18,7 @@
     self.window.windowScene = windowScreen;
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[JieTabBarController new]];
 }
 
 

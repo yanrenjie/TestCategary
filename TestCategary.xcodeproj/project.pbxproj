@@ -11,11 +11,16 @@
 		3110792F23669E79006EC700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110792223669E79006EC700 /* main.m */; };
 		3110793023669E79006EC700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110792323669E79006EC700 /* AppDelegate.m */; };
 		3110793223669E79006EC700 /* UIView+Jie.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110792923669E79006EC700 /* UIView+Jie.m */; };
-		3110793323669E79006EC700 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110792C23669E79006EC700 /* ViewController.m */; };
+		3110793323669E79006EC700 /* GitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110792C23669E79006EC700 /* GitHubViewController.m */; };
 		31343F002362F1440013EAB0 /* JieNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31343EFF2362F1440013EAB0 /* JieNavigationController.m */; };
 		31343F042362FFCF0013EAB0 /* JieNavBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31343F032362FFCF0013EAB0 /* JieNavBaseViewController.m */; };
 		31343F0723632CA30013EAB0 /* JieBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31343F0623632CA30013EAB0 /* JieBaseViewController.m */; };
 		31343F0A2363324C0013EAB0 /* JieWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31343F092363324C0013EAB0 /* JieWebViewController.m */; };
+		314CF6B32366B6EC005EA85C /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CF6B22366B6EC005EA85C /* TwitterViewController.m */; };
+		314CF6B62366B6F7005EA85C /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CF6B52366B6F7005EA85C /* VideoViewController.m */; };
+		314CF6B92366B700005EA85C /* SinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CF6B82366B700005EA85C /* SinaViewController.m */; };
+		314CF6BC2366B70A005EA85C /* GoogleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CF6BB2366B70A005EA85C /* GoogleViewController.m */; };
+		314CF6BF2366B758005EA85C /* JieTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CF6BE2366B758005EA85C /* JieTabBarController.m */; };
 		314E06B22361B430007084AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314E06B02361B430007084AD /* Main.storyboard */; };
 		314E06B42361B433007084AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314E06B32361B433007084AD /* Assets.xcassets */; };
 		314E06B72361B433007084AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314E06B52361B433007084AD /* LaunchScreen.storyboard */; };
@@ -50,8 +55,8 @@
 		3110792723669E79006EC700 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		3110792923669E79006EC700 /* UIView+Jie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Jie.m"; sourceTree = "<group>"; };
 		3110792A23669E79006EC700 /* UIView+Jie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Jie.h"; sourceTree = "<group>"; };
-		3110792C23669E79006EC700 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3110792D23669E79006EC700 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3110792C23669E79006EC700 /* GitHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubViewController.m; sourceTree = "<group>"; };
+		3110792D23669E79006EC700 /* GitHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubViewController.h; sourceTree = "<group>"; };
 		31343EFE2362F1440013EAB0 /* JieNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieNavigationController.h; sourceTree = "<group>"; };
 		31343EFF2362F1440013EAB0 /* JieNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieNavigationController.m; sourceTree = "<group>"; };
 		31343F022362FFCF0013EAB0 /* JieNavBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieNavBaseViewController.h; sourceTree = "<group>"; };
@@ -60,6 +65,16 @@
 		31343F0623632CA30013EAB0 /* JieBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieBaseViewController.m; sourceTree = "<group>"; };
 		31343F082363324C0013EAB0 /* JieWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieWebViewController.h; sourceTree = "<group>"; };
 		31343F092363324C0013EAB0 /* JieWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieWebViewController.m; sourceTree = "<group>"; };
+		314CF6B12366B6EC005EA85C /* TwitterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		314CF6B22366B6EC005EA85C /* TwitterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		314CF6B42366B6F7005EA85C /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		314CF6B52366B6F7005EA85C /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		314CF6B72366B700005EA85C /* SinaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinaViewController.h; sourceTree = "<group>"; };
+		314CF6B82366B700005EA85C /* SinaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinaViewController.m; sourceTree = "<group>"; };
+		314CF6BA2366B70A005EA85C /* GoogleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleViewController.h; sourceTree = "<group>"; };
+		314CF6BB2366B70A005EA85C /* GoogleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleViewController.m; sourceTree = "<group>"; };
+		314CF6BD2366B758005EA85C /* JieTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieTabBarController.h; sourceTree = "<group>"; };
+		314CF6BE2366B758005EA85C /* JieTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieTabBarController.m; sourceTree = "<group>"; };
 		314E06A42361B430007084AD /* TestCategary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCategary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		314E06B12361B430007084AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		314E06B32361B433007084AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,8 +150,16 @@
 		3110792B23669E79006EC700 /* 项目文件 */ = {
 			isa = PBXGroup;
 			children = (
-				3110792C23669E79006EC700 /* ViewController.m */,
-				3110792D23669E79006EC700 /* ViewController.h */,
+				3110792D23669E79006EC700 /* GitHubViewController.h */,
+				3110792C23669E79006EC700 /* GitHubViewController.m */,
+				314CF6B12366B6EC005EA85C /* TwitterViewController.h */,
+				314CF6B22366B6EC005EA85C /* TwitterViewController.m */,
+				314CF6B42366B6F7005EA85C /* VideoViewController.h */,
+				314CF6B52366B6F7005EA85C /* VideoViewController.m */,
+				314CF6B72366B700005EA85C /* SinaViewController.h */,
+				314CF6B82366B700005EA85C /* SinaViewController.m */,
+				314CF6BA2366B70A005EA85C /* GoogleViewController.h */,
+				314CF6BB2366B70A005EA85C /* GoogleViewController.m */,
 			);
 			path = "项目文件";
 			sourceTree = "<group>";
@@ -230,6 +253,8 @@
 				31343F0623632CA30013EAB0 /* JieBaseViewController.m */,
 				31343F082363324C0013EAB0 /* JieWebViewController.h */,
 				31343F092363324C0013EAB0 /* JieWebViewController.m */,
+				314CF6BD2366B758005EA85C /* JieTabBarController.h */,
+				314CF6BE2366B758005EA85C /* JieTabBarController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -367,18 +392,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3161A4F423658C7E00BED611 /* WaterFlowLayout.m in Sources */,
+				314CF6B92366B700005EA85C /* SinaViewController.m in Sources */,
 				3161A4F323658C7E00BED611 /* MyCollectionViewCell.m in Sources */,
 				3161A5102365F98800BED611 /* JieMultiVCTitleView.m in Sources */,
 				3161A50D2365DF9800BED611 /* JieMultiContentView.m in Sources */,
 				3110792F23669E79006EC700 /* main.m in Sources */,
-				3110793323669E79006EC700 /* ViewController.m in Sources */,
+				3110793323669E79006EC700 /* GitHubViewController.m in Sources */,
+				314CF6B62366B6F7005EA85C /* VideoViewController.m in Sources */,
 				3110792E23669E79006EC700 /* SceneDelegate.m in Sources */,
+				314CF6BC2366B70A005EA85C /* GoogleViewController.m in Sources */,
 				31343F042362FFCF0013EAB0 /* JieNavBaseViewController.m in Sources */,
 				31BDC6A82362E4FB00634438 /* JieNavigationBar.m in Sources */,
 				31343F0723632CA30013EAB0 /* JieBaseViewController.m in Sources */,
 				3110793023669E79006EC700 /* AppDelegate.m in Sources */,
 				31343F0A2363324C0013EAB0 /* JieWebViewController.m in Sources */,
 				31343F002362F1440013EAB0 /* JieNavigationController.m in Sources */,
+				314CF6B32366B6EC005EA85C /* TwitterViewController.m in Sources */,
+				314CF6BF2366B758005EA85C /* JieTabBarController.m in Sources */,
 				3110793223669E79006EC700 /* UIView+Jie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

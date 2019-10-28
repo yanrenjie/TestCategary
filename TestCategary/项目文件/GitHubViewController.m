@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  GitHubViewController.m
 //  TestCategary
 //
 //  Created by 颜仁浩 on 2019/10/24.
 //  Copyright © 2019 颜仁浩. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GitHubViewController.h"
 #import "WaterFlowLayout.h"
 #import "MyCollectionViewCell.h"
 
 static NSString * const reuse_string = @"MyCollectionViewCell";
 
-@interface ViewController ()<UICollectionViewDataSource, WaterFlowLayoutDelegate> {
+@interface GitHubViewController ()<UICollectionViewDataSource, WaterFlowLayoutDelegate> {
     UICollectionView *_collectionView;
     NSMutableArray *_data_arr;
     NSInteger column_number;
@@ -20,13 +20,12 @@ static NSString * const reuse_string = @"MyCollectionViewCell";
 
 @end
 
-@implementation ViewController
+@implementation GitHubViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = UIColor.whiteColor;
-    self.title = @"瀑布流";
     column_number = 3;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]  initWithTitle:@"刷新" style:UIBarButtonItemStyleDone target:self action:@selector(refresh_action)];
@@ -46,6 +45,12 @@ static NSString * const reuse_string = @"MyCollectionViewCell";
     [self.view addSubview:_collectionView];
     
     [self refresh_action];
+    
+//    if (IPHONE_X) {
+//        NSLog(@"iPhoneX列");
+//    } else {
+//        NSLog(@"三段式");
+//    }
 }
 
 
