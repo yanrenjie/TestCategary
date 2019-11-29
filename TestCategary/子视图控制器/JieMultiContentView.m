@@ -1,4 +1,4 @@
-//
+    //
 //  JieMultiContentView.m
 //  TestCategary
 //
@@ -136,11 +136,11 @@ static NSString *viewControllerCellID = @"ViewControllerCellID";
         if (sourceIndex >= self.childVCs.count) {
             sourceIndex = self.childVCs.count - 1;
         }
-        
-        // 将progress， sourceIndex，targetIndex和titleView进行联动绑定
-        if ([self.delegate respondsToSelector:@selector(multiContentView:progress:sourceIndex:targetIndex:)]) {
-            [self.delegate multiContentView:self progress:progress sourceIndex:sourceIndex targetIndex:targetIndex];
-        }
+    }
+    
+    // 将progress， sourceIndex，targetIndex和titleView进行联动绑定
+    if ([self.delegate respondsToSelector:@selector(multiContentView:progress:sourceIndex:targetIndex:)]) {
+        [self.delegate multiContentView:self progress:progress sourceIndex:sourceIndex targetIndex:targetIndex];
     }
 }
 
